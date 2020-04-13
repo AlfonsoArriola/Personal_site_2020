@@ -1,0 +1,167 @@
+body{
+    /* background: #E1E9F0;
+    color: #271D10; */
+    /* background:#feffff; */
+    color:#02060c;
+    background-image: url('../images/FixedBow.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0 10rem;
+    height: 100%;
+}
+
+h1{
+    font-family: 'Gravitas One', cursive;
+    /* text-shadow: 2px 4px #CABFB4; */
+}
+
+h3{
+    font-family: 'Parisienne', cursive;
+    font-size: 2rem;
+}
+
+a {
+    color: #ff0285;
+    text-decoration: none;
+}
+
+.openButton{
+    float: right;
+}
+
+#homeButton{
+    margin: 16rem 10rem 0 0;
+}
+
+#closebtn{
+    font-size: 6em;
+    margin: 3rem 0 0 5rem;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 5%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ff0285;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+    margin: 1rem 0;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ff0285;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.page_bulrb{
+    margin: 3rem 1rem 2rem;
+}
+
+.project{
+    background-color: #feffff;
+    border: 1px solid #02060c;
+    padding: 1rem 1.5rem;
+    opacity: 0.95;
+}
+
+.pro{
+
+}
+
+.passion{
+
+}
+
+/* @media screen and (max-width: 1000px){
+    #homeButton{
+        margin: 16rem 3rem 0 0;
+    }
+} */
+
+@media screen and (max-width: 800px) {
+    body{
+        background-image: url('../images/FixedBowTablet.jpg');
+        background-size: contain;
+        background-position: 43% 3%;
+        padding: 0 5rem;
+    }
+
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+  @media screen and (max-width: 440px) {
+    body{
+        background-image: url('../images/FixedBowMobile.jpg');
+        background-size: cover;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    #homeButton {
+        margin: 0;
+        float: none;
+    }
+  }
+
+  /* @media screen and (max-width: 1000px){
+    #homeButton{
+        margin: 16rem 1rem 0 0;
+    }
+} */
+  
